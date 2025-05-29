@@ -1,0 +1,11 @@
+.about-us-container{
+    margin-top: 50px;
+}
+
+#learn-more-about-us{
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-align: center;
+}
