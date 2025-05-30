@@ -28,6 +28,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bold;
 }
 
 .welcome-image p {
@@ -35,6 +36,7 @@
     font-size: 1.2rem;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
 .enroll-button, .learn-button {
@@ -42,7 +44,7 @@
     margin: 10px;
     font-size: 1.1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
