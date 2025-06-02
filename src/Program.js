@@ -43,6 +43,9 @@ export default function Program() {
                 ))}
             </div>
             {visible && <div className="program-description">{visible}</div>}
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
         </div>
     )
 }
