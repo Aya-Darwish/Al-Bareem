@@ -4,6 +4,7 @@
     align-items: right;
     background-color: #333;
     color: #fff;
+    position: fixed;
 }
 
 /* Base styles for all menu items */

@@ -2,7 +2,7 @@ import './aboutUs.css';
 export default function AboutUs(){
     return(
         <div className="about-us-container">
-            <h1 id='learn-more-about-us'>learn more about us</h1>
+            <h1 id='learn-more-about-us'> about us</h1>
             <div className="ourVision">
                 <h1>Our Vision</h1>
                 <p>we aim to be the leading educational institution in the Syria, where every child in empowered <br/>

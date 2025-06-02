@@ -3,6 +3,8 @@ import './App.css';
 import HeaderMenu from './Header.js';
 import Welcome from './Welcome';
 import AboutUs from './AboutUs';
+import Program from './Program';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <HeaderMenu />
       <Welcome />
       <AboutUs />
+      <Program />
     </div>
   );
 }
