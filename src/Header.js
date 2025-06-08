@@ -1,74 +1,90 @@
 import './header.css';
-
-export default function Header(){
+export default function Header() {
     const menuItems = [
-        {name: 'Home' , href: '/home'},
-        {name: 'About us' , href: '/about.us'},
-        {name: 'Program' , href: '/program'},
-        {name: 'Gallery' , href: '/gallery'},
-        {name: 'Events' , href: '/events'},
-        {name: 'Resources' , href: '/resources'},
-        {name: 'Testimonials' , href: '/home'},
-        {name: 'admission' , href: '/admission'},
-        {name: 'Contact us' , href: '/contact.us'},
+        {
+            name: 'Home',
+            href: '/home',
+        },
+        {
+            name: 'About Us',
+            href: '/about',
+        },
+        {
+            name: 'Program',
+            href: '/program',
+        },
+        {
+            name: 'Gallery',
+            href: '/gallery',
+        },
+        {
+            name: 'Events',
+            href: '/events',
+        },
+        {
+            name: 'Resources',
+            href: '/resources',
+        },
+        {
+            name: 'Testimonials',
+            href: '/testimonials',
+        },
+        {
+            name: 'Admission',
+            href: '/admission',
+        },
+        {
+            name: 'Contact Us',
+            href: '/contact',
+        },
+        
+        
     ];
     return(
-        <div>
-            <nav className="contianer">
-                <h1>Al-Bareem</h1>
-                <ul>
-                    {menuItems.map((item) => {
-                        let linkClass = 'menu-link'; 
-                        let listItemClass = 'menu-item';
-
-                        switch(item.name){
-                            case 'Home':
-                                linkClass += 'home-style';
-                                break;
-
-                            case 'About us':
-                                linkClass += 'about-style';
-                                break;
-
-                            case 'Program':
-                                linkClass += 'program-style';
-                                break;
-
-                            case 'Gallery':
-                                linkClass += 'gallery-style';
-                                break;
-
-                            case 'Events':
-                                linkClass += 'events-style';
-                                break;
-
-                            case 'Resources':
-                                linkClass += 'resources-style';
-                                break;
-
-                            case 'Testimonials':
-                                linkClass += 'testimonials-style';
-                                break;
-
-                            case 'Admission':
-                                linkClass += 'admission-style';
-                                break;
-
-                            case 'Contact us':
-                                linkClass += 'contact-style';
-                                break;
-
-                            default: 
-                                break;
-                        }
-                        return(
-                                <li key={item.name} className={listItemClass}>
-                                    <a href={item.href} className={linkClass}>{item.name}</a>
-                                </li>
-                        );
-                    })}
-                </ul>
-            </nav>
+        <div className="header-container">
+            <ul className="menu-list">
+                {menuItems.map((item) => {
+                    let classItem = 'menu-item';
+                    let linkItem = 'link-item';
+                    switch (item.name) {
+                        case 'Home':
+                            classItem += 'menu-item';
+                            break;
+                        case 'About Us':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Program':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Gallery':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Events':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Resources':
+                            classItem += 'menu-item';       
+                            break;
+                        case 'Testimonials':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Admission':
+                            classItem += 'menu-item';
+                            break;
+                        case 'Contact Us':
+                            classItem += 'menu-item';
+                            break;
+                        default:
+                            classItem += 'menu-item';
+                            break;
+                    }
+                    return(
+                        <li key={item.name} className={classItem}>
+                            <a href={item.href} className={linkItem}>{item.name}</a>
+                        </li>
+                    );
+                })}
+            </ul>
         </div>
     );
 }

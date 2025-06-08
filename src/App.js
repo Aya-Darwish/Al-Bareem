@@ -1,20 +1,10 @@
-import React from 'react';
-import './App.css';
-import HeaderMenu from './Header.js';
-import Welcome from './Welcome';
-import AboutUs from './AboutUs';
-import Program from './Program';
-
-
-function App() {
-  return (
-    <div className="App">
-      <HeaderMenu />
+import Header from "./Header";
+import Welcome from "./Welcome";
+export default function App(){
+  return(
+    <div>
+      <Header />
       <Welcome />
-      <AboutUs />
-      <Program />
     </div>
   );
 }
-
-export default App;
