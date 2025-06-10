@@ -1,9 +1,9 @@
 import './aboutUs.css';
 export default function AboutUs(){
     const usItems = [
-        {name: "vision", description: "To provide the high-quality education that nurures children's natural curiosity, develops their social, emotional, and creative skills, and instills a lifelong love of learning."},
+        {name: "Vision", description: "To provide the high-quality education that nurures children's natural curiosity, develops their social, emotional, and creative skills, and instills a lifelong love of learning."},
         {name: "Mission", description: "To provide the high-quality education that nurures children's natural curiosity, develops their social, emotional, and creative skills, and instills a lifelong love of learning."},
-        {name: " Values", description: "Respect, Creativety, Safety, Collaboration."},
+        {name: "Values", description: "Respect, Creativety, Safety, Collaboration."},
     ];
     return(
         <div className="about-us-container">

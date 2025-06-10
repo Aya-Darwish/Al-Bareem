@@ -22,7 +22,7 @@
     z-index: 1;
 }
 
-li{
+.menu-list li{
     display: inline-block;
     margin-top: 30px;
     margin-right: 10px;
@@ -42,13 +42,13 @@ li::after{
     left: 50%;
     width: 10px;
     height: 5px;
-    background-color: #ffd966;
+    background-color: #eded1f;
     border-radius: 50%;
     transform: translateX(-50%) scale(0);
     transition: all 0.3s ease-in-out;
 }
 
-li:hover::after{
+.menu-list li:hover::after{
     width: 100%;
     height: 4px;
     border-radius: 0;

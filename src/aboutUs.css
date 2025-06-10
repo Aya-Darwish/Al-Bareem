@@ -28,7 +28,6 @@
     margin: 50px;
     list-style: none;
     background-color: #ffffff;
-    border-top: 5px solid #eded1f;
     border-radius: 15px;
     flex: 1;
     padding: 20px;
@@ -51,4 +50,12 @@
 .about-us-container li:hover{
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+}
+
+.item-link-mission {
+    border-top: 5px solid #34cbf1;
+}
+
+.item-link-vision, .item-link-values {
+    border-top: 5px solid #eded1f;
 }
