@@ -3,9 +3,9 @@ import './Program.css';
 
 export default function Program(){
     const itemProgram = [
-        {title: 'KG1', description: 'when children are engaging in fun, interactive activities like singing, storytelling, and basic crafts to develop their social, motor, and early learning skill in a playful environment.', src: process.env.PUBLIC_URL + '/images/kg1.jpg'},
-        {title: 'KG2', description: 'when children are exploring the early math and literacy skills, participating in group activities, and engaging in creative play to build confidence, independence, and love for learing.', src: process.env.PUBLIC_URL + '/images/kg2.jpg'},
-        {title: 'KG3', description: 'when children are developing foundational academic skills like readin, writing, and basic math, while also enjoying hands-on experiments, collaborative projects, and structured play to prepare them for primary school.', src: process.env.PUBLIC_URL + '/images/kg3.jpg'},
+        {title: 'KG1', description: 'when children are engaging in fun, interactive activities like singing, storytelling, and basic crafts to develop their social, motor, and early learning skill in a playful environment.'},
+        {title: 'KG2', description: 'when children are exploring the early math and literacy skills, participating in group activities, and engaging in creative play to build confidence, independence, and love for learing.'},
+        {title: 'KG3', description: 'when children are developing foundational academic skills like readin, writing, and basic math, while also enjoying hands-on experiments, collaborative projects, and structured play to prepare them for primary school.'},
     ];
     return(
         <div className="program-container">
@@ -38,8 +38,8 @@ export default function Program(){
                             <div className="text-content">
                                 <h2 className={titleClass}>{item.title}</h2>
                                 <p>{item.description}</p>
+                                
                             </div>
-                            <img src={item.src} alt={item.title} />
                         </li>
                     );
                 })}

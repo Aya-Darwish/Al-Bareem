@@ -1,81 +1,177 @@
-.program-container{
+.program-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    top: 900px;
+}
+
+.program-dots {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.program-dots::before {
+    content: '';
     position: absolute;
-    top: 1500px;
-    left: 25px;
-    width: 1450px;
-    height: 100%;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, #4a90e2, #67b26f);
+    z-index: 0;
 }
 
-.program-container h1{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #4a90e2;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.program-container p{
-    text-align: center;
+.dot:hover {
+    transform: scale(1.2);
+    background: #67b26f;
+}
+
+.dot h2 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.dot:hover h2 {
+    color: #67b26f;
+}
+
+.program-container h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.program-container ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.program-container p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .program-item {
     display: flex;
     align-items: center;
-    margin: 30px 0;
-    padding: 20px;
+    margin: 60px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Default layout (text on right, image on left) */
+.program-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
 .program-item {
     flex-direction: row-reverse;
 }
 
-/* KG2 specific layout (text on left, image on right) */
 .item-kg2 {
     flex-direction: row;
 }
 
 .text-content {
     flex: 1;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 .program-item img {
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 320px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-item:hover img {
+    transform: scale(1.02);
 }
 
 .title-kg1, .title-kg3 {
     text-align: right;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 15px;
 }
 
 .title-kg2 {
     text-align: left;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 15px;
 }
 
 .program-item p {
     text-align: left;
     font-size: 16px;
-    line-height: 1.6;
-    color: #000000;
+    line-height: 1.8;
+    color: #34495e;
+    margin: 0;
 }
 
-/* Text alignment for non-KG2 items */
 .item-kg1 p, .item-kg3 p {
     text-align: right;
-} 
+}
+
+@media (max-width: 1024px) {
+    .program-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .program-item img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .text-content {
+        padding: 0 20px;
+    }
+    
+    .title-kg1, .title-kg2, .title-kg3 {
+        text-align: center;
+    }
+    
+    .item-kg1 p, .item-kg2 p, .item-kg3 p {
+        text-align: center;
+    }
+}
