@@ -1,21 +1,24 @@
 import './header.css';
+import React from 'react';
+
 export default function Header() {
+
     const menuItems = [
         {
             name: 'Home',
-            href: '/home',
+            href: './Welcome.js',
         },
         {
             name: 'About Us',
-            href: '/about',
+            href: './AboutUs.js',
         },
         {
             name: 'Program',
-            href: '/program',
+            href: './Program.js',
         },
         {
             name: 'Gallery',
-            href: '/gallery',
+            href: './Gallery.js',
         },
         {
             name: 'Events',

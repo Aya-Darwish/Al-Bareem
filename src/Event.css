@@ -1,0 +1,198 @@
+.event-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    position: absolute;
+    top: 3000px;
+    left: 550px;
+}
+
+.event-container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.event-container p {
+    text-align: center;
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.date-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.event-date-input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    color: #2c3e50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-date-input:hover {
+    border-color: #67b26f;
+}
+
+.event-date-input:focus {
+    outline: none;
+    border-color: #67b26f;
+    box-shadow: 0 0 0 3px rgba(103, 178, 111, 0.2);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #67b26f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(103, 178, 111, 0.3);
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.icons button:hover {
+    background: #67b26f;
+    transform: translateY(-2px);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.weekday {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calendar-day:hover {
+    background: #4a90e2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.calendar-day.empty {
+    background: none;
+    cursor: default;
+}
+
+.calendar-day.empty:hover {
+    transform: none;
+    background: none;
+}
+
+.calendar-day.today {
+    background: #4a90e2;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+.calendar-day.today:hover {
+    background: #67b26f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(103, 178, 111, 0.3);
+}
+
+.calendar-day.selected {
+    background: #67b26f;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(103, 178, 111, 0.3);
+}
+
+.calendar-day.selected:hover {
+    background: #4a90e2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.date-difference {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.date-difference p {
+    margin: 5px 0;
+    color: #2c3e50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.date-difference p:first-child {
+    font-weight: bold;
+    color: #4a90e2;
+}

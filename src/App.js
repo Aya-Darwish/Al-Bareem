@@ -4,7 +4,7 @@ import Welcome from "./Welcome";
 import AboutUs from "./AboutUs.js";
 import Program from "./Program.js";
 import Gallery from './Gallery.js';
-
+import Event from './Event.js';
 export default function App(){
   return(
     <div>
@@ -13,6 +13,7 @@ export default function App(){
       <AboutUs />
       <Program />
       <Gallery />
+      <Event />
     </div>
   );
 }
