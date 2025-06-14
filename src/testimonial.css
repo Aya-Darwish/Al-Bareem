@@ -1,0 +1,59 @@
+.testimonial-container{
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    position: absolute;
+    top: 3700px;
+    left: 450px;
+}
+
+.testimonial-text h1{
+    text-align: center;
+    font-size: 42px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.testimonial-text p{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#experience{
+    margin-top: 20px;
+}
+
+.more-btn {
+    position: relative;
+    left: 800px;
+    top: 70px;
+    background-color: #4a90e2;
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.more-btn:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
